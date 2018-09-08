@@ -132,7 +132,7 @@ Obviously, when you support several request formats, you have to provide
 a template for each of the supported formats. In this case, you should create
 a new ``hello.xml.twig`` template:
 
-.. code-block:: xml+php
+.. code-block:: xml
 
     <!-- app/Resources/views/default/hello.xml.twig -->
     <hello>

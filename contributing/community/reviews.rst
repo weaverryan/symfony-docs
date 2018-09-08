@@ -81,17 +81,15 @@ The steps for the review are:
    If you created a reproduction project, include the link to the project in
    your comment.
 
-.. topic:: Example
+Here is a sample comment for a bug report that could be reproduced:
 
-    Here is a sample comment for a bug report that could be reproduced:
+.. code-block:: text
 
-    .. code-block:: text
+    Thank you @weaverryan for creating this bug report! This indeed looks
+    like a bug. I reproduced the bug in the "kernel-bug" branch of
+    https://github.com/webmozart/symfony-standard.
 
-        Thank you @weaverryan for creating this bug report! This indeed looks
-        like a bug. I reproduced the bug in the "kernel-bug" branch of
-        https://github.com/webmozart/symfony-standard.
-
-        Status: Reviewed
+    Status: Reviewed
 
 The Pull Request Review Process
 -------------------------------
@@ -190,17 +188,16 @@ Pick a pull request from the `PRs in need of review`_ and follow these steps:
    status. A core contributor will soon look at the PR and decide whether it can
    be merged or needs further work.
 
-.. topic:: Example
 
-    Here is a sample comment for a PR that is not yet ready for merge:
+Here is a sample comment for a PR that is not yet ready for merge:
 
-    .. code-block:: text
+.. code-block:: text
 
-        Thank you @weaverryan for working on this! It seems that your test
-        cases don't cover the cases when the counter is zero or smaller.
-        Could you please add some tests for that?
+    Thank you @weaverryan for working on this! It seems that your test
+    cases don't cover the cases when the counter is zero or smaller.
+    Could you please add some tests for that?
 
-        Status: Needs Work
+    Status: Needs Work
 
 .. _GitHub: https://github.com
 .. _Symfony issue tracker: https://github.com/symfony/symfony/issues
