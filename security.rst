@@ -619,7 +619,7 @@ Your next steps depend on your setup:
 * Learn how to deny access, load the User object and deal with roles in the
   :ref:`Authorization <security-authorization>` section.
 
-.. _`security-authorization`:
+.. _security-authorization:
 
 2) Denying Access, Roles and other Authorization
 ------------------------------------------------
