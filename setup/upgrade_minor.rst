@@ -16,7 +16,7 @@ There are two steps to upgrading a minor version:
 #. :ref:`Update the Symfony library via Composer <upgrade-minor-symfony-composer>`;
 #. :ref:`Update your code to work with the new version <upgrade-minor-symfony-code>`.
 
-.. _`upgrade-minor-symfony-composer`:
+.. _upgrade-minor-symfony-composer:
 
 1) Update the Symfony Library via Composer
 ------------------------------------------
@@ -45,7 +45,7 @@ Next, use Composer to download new versions of the libraries:
 
 .. include:: /setup/_update_all_packages.rst.inc
 
-.. _`upgrade-minor-symfony-code`:
+.. _upgrade-minor-symfony-code:
 
 2) Updating your Code to Work with the new Version
 --------------------------------------------------

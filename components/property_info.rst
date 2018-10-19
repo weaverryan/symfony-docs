@@ -17,7 +17,7 @@ within that class.
 .. versionadded:: 2.8
     The PropertyInfo component was introduced in Symfony 2.8.
 
-.. _`components-property-information-installation`:
+.. _components-property-information-installation:
 
 Installation
 ------------
@@ -33,7 +33,7 @@ Alternatively, you can clone the `<https://github.com/symfony/property-info>`_ r
 Additional dependencies may be required for some of the
 :ref:`extractors provided with this component <components-property-info-extractors>`.
 
-.. _`components-property-information-usage`:
+.. _components-property-information-usage:
 
 Usage
 -----
@@ -117,7 +117,7 @@ both provide list and type information it is probably better that:
         )
     );
 
-.. _`components-property-information-extractable-information`:
+.. _components-property-information-extractable-information:
 
 Extractable Information
 -----------------------
@@ -253,7 +253,7 @@ works.
     available on the main :class:`Symfony\\Component\\PropertyInfo\\PropertyInfoExtractor`
     class.
 
-.. _`components-property-info-type`:
+.. _components-property-info-type:
 
 Type Objects
 ------------
@@ -277,7 +277,7 @@ class.
 
 Each object will provide 6 attributes, available in the 6 methods:
 
-.. _`components-property-info-type-builtin`:
+.. _components-property-info-type-builtin:
 
 Type::getBuiltInType()
 ~~~~~~~~~~~~~~~~~~~~~~
@@ -326,7 +326,7 @@ available), via the :method:`Type::getCollectionKeyType() <Symfony\\Component\\P
 and :method:`Type::getCollectionValueType() <Symfony\\Component\\PropertyInfo\\Type::getCollectionValueType>`
 methods.
 
-.. _`components-property-info-extractors`:
+.. _components-property-info-extractors:
 
 Extractors
 ----------
@@ -339,7 +339,7 @@ The :class:`Symfony\\Component\\PropertyInfo\\PropertyInfoExtractor` will
 iterate over the relevant extractor classes in the order they were set, call
 the appropriate method and return the first result that is not ``null``.
 
-.. _`components-property-information-extractors-available`:
+.. _components-property-information-extractors-available:
 
 While you can create your own extractors, the following are already available
 to cover most use-cases:
@@ -461,7 +461,7 @@ with the ``property_info`` service in the Symfony Framework.
     // Type information.
     $doctrineExtractor->getTypes($class, $property);
 
-.. _`components-property-information-extractors-creation`:
+.. _components-property-information-extractors-creation:
 
 Creating Your Own Extractors
 ----------------------------

@@ -287,7 +287,7 @@ directory outside of a bundle.
     single: Configuration; Doctrine DBAL
     single: Doctrine; DBAL configuration
 
-.. _`reference-dbal-configuration`:
+.. _reference-dbal-configuration:
 
 Custom Mapping Entities in a Bundle
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~

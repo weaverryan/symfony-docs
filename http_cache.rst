@@ -63,7 +63,7 @@ as `Varnish`_, `Squid in reverse proxy mode`_, and the Symfony reverse proxy.
 .. index::
    single: Cache; Symfony reverse proxy
 
-.. _`symfony-gateway-cache`:
+.. _symfony-gateway-cache:
 .. _symfony2-reverse-proxy:
 
 Symfony Reverse Proxy
