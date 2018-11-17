@@ -70,7 +70,7 @@ Configuration
   * `lifetime`_ (deprecated since 2.8)
   * `matcher`_
 
-    * `ip`_
+    * :ref:`ip <reference-profiler-matcher-ip>`
     * :ref:`path <reference-profiler-matcher-path>`
     * `service`_
 
@@ -680,12 +680,14 @@ matcher
 .......
 
 Matcher options are configured to dynamically enable the profiler. For
-instance, based on the `ip`_ or :ref:`path <reference-profiler-matcher-path>`.
+instance, based on the :ref:`ip <reference-profiler-matcher-ip>` or :ref:`path <reference-profiler-matcher-path>`.
 
 .. seealso::
 
     See :doc:`/profiler/matchers` for more information about using
     matchers to enable/disable the profiler.
+
+.. _reference-profiler-matcher-ip:
 
 ip
 ""
