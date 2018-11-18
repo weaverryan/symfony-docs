@@ -17,3 +17,4 @@
         AnnotationRegistry::registerLoader([$loader, 'loadClass']);
 
         return $loader;
+

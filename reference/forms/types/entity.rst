@@ -14,7 +14,7 @@ objects from the database.
 +-------------+------------------------------------------------------------------+
 | Options     | - `choice_label`_                                                |
 |             | - `class`_                                                       |
-|             | - `em`_                                                          |
+|             | - :ref:`em <reference-forms-type-entity-em>`                     |
 |             | - `query_builder`_                                               |
 +-------------+------------------------------------------------------------------+
 | Overridden  | - `choice_name`_                                                 |
@@ -186,6 +186,8 @@ class
 The class of your entity (e.g. ``AppBundle:Category``). This can be
 a fully-qualified class name (e.g. ``AppBundle\Entity\Category``)
 or the short alias name (as shown prior).
+
+.. _reference-forms-type-entity-em:
 
 em
 ~~

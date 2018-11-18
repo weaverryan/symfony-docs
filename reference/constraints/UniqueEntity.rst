@@ -10,7 +10,7 @@ using an email address that already exists in the system.
 +----------------+-------------------------------------------------------------------------------------+
 | Options        | - `fields`_                                                                         |
 |                | - `message`_                                                                        |
-|                | - `em`_                                                                             |
+|                | - :ref:`em <reference-constraint-unique-entity-em>`                                                                             |
 |                | - `repositoryMethod`_                                                               |
 |                | - `errorPath`_                                                                      |
 |                | - `ignoreNull`_                                                                     |
@@ -140,6 +140,8 @@ message
 **type**: ``string`` **default**: ``This value is already used.``
 
 The message that's displayed when this constraint fails.
+
+.. _reference-constraint-unique-entity-em:
 
 em
 ~~
