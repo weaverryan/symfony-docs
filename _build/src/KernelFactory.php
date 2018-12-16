@@ -5,14 +5,14 @@ namespace SymfonyDocs;
 use Doctrine\RST\Configuration;
 use Doctrine\RST\Kernel;
 use SymfonyDocs\Directive as SymfonyDirectives;
-use SymfonyDocs\Reference as SymfonyRefernces;
+use SymfonyDocs\Reference as SymfonyReferences;
 
 /**
  * Class KernelFactory
  */
 final class KernelFactory
 {
-    public static function createKernel(?string $parseOnly): Kernel
+    public static function createKernel(string $parseOnlyPath = null): Kernel
     {
         $configuration = new Configuration();
         $configuration->setCustomTemplateDirs([__DIR__.'/Templates']);
@@ -24,7 +24,7 @@ final class KernelFactory
             )
         );
 
-        if ($parseOnly) {
+        if ($parseOnlyPath) {
             $configuration->setBaseUrl(
                 sprintf(
                     SymfonyDocConfiguration::getSymfonyDocUrl(),
@@ -32,8 +32,8 @@ final class KernelFactory
                 )
             );
             $configuration->setBaseUrlEnabledCallable(
-                static function (string $path) use ($parseOnly) : bool {
-                    return strpos($path, $parseOnly) !== 0;
+                static function (string $path) use ($parseOnlyPath) : bool {
+                    return strpos($path, $parseOnlyPath) !== 0;
                 }
             );
         }
@@ -48,6 +48,7 @@ final class KernelFactory
     private static function getDirectives(): array
     {
         return [
+            new SymfonyDirectives\AdmonitionDirective(),
             new SymfonyDirectives\CautionDirective(),
             new SymfonyDirectives\ClassDirective(),
             new SymfonyDirectives\CodeBlockDirective(),
@@ -66,14 +67,14 @@ final class KernelFactory
     private static function getReferences(): array
     {
         return [
-            new SymfonyRefernces\DocReference(),
-            new SymfonyRefernces\RefReference(),
-            new SymfonyRefernces\ClassReference(),
-            new SymfonyRefernces\MethodReference(),
-            new SymfonyRefernces\NamespaceReference(),
-            new SymfonyRefernces\PhpFunctionReference(),
-            new SymfonyRefernces\PhpMethodReference(),
-            new SymfonyRefernces\PhpClassReference(),
+            new SymfonyReferences\DocReference(),
+            new SymfonyReferences\RefReference(),
+            new SymfonyReferences\ClassReference(),
+            new SymfonyReferences\MethodReference(),
+            new SymfonyReferences\NamespaceReference(),
+            new SymfonyReferences\PhpFunctionReference(),
+            new SymfonyReferences\PhpMethodReference(),
+            new SymfonyReferences\PhpClassReference(),
         ];
     }
 }
