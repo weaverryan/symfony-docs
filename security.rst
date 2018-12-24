@@ -344,7 +344,7 @@ so here are a few common use-cases:
 For the most detailed description of authenticators and how they work, see
 :doc:`/security/guard_authentication`.
 
-.. _`security-authorization`:
+.. _security-authorization:
 .. _denying-access-roles-and-other-authorization:
 
 4) Denying Access, Roles and other Authorization
