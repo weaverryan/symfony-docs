@@ -28,7 +28,7 @@ configuration.
     single: Configuration; Doctrine DBAL
     single: Doctrine; DBAL configuration
 
-.. _reference-dbal-configuration:
+.. _`reference-dbal-configuration`:
 
 Doctrine DBAL Configuration
 ---------------------------

@@ -221,7 +221,7 @@ This test will check if the current ``form`` does not have a parent form view.
         {{ form_errors(form) }}
     {% endif %}
 
-.. _twig-reference-form-variables:
+.. _`twig-reference-form-variables`:
 
 More about Form Variables
 -------------------------
