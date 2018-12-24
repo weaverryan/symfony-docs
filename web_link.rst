@@ -55,7 +55,7 @@ To do that, first install the WebLink component:
 Now, update the template to use the ``preload()`` Twig function provided by
 WebLink:
 
-.. code:: twig
+.. code-block:: twig
 
     <head>
        {# ... #}
@@ -89,7 +89,7 @@ improve performance of your apps in production right now.
 If you want to prevent the push but let the browser preload the resource by
 issuing an early separate HTTP request, use the ``nopush`` option:
 
-.. code:: twig
+.. code-block:: twig
 
     <head>
        {# ... #}
@@ -122,7 +122,7 @@ The component also supports sending HTTP links not related to performance and
 any link implementing the `PSR-13`_ standard. For instance, any
 `link defined in the HTML specification`_:
 
-.. code:: twig
+.. code-block:: twig
 
     <head>
        {# ... #}
